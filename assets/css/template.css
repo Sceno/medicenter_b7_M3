@@ -8,18 +8,287 @@ header{
     height: 120px;
 }
 .logo{
-    background-color: aqua;
     height: 120px;
     display: flex;
     align-items: center;
 }
 .menu{
-    background-color: blue;
-    height: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
 }
 .container{
     display: flex;
     justify-content: space-between;
     width: 990px;
+}
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: #39AAE1;
+    color: white;
+}
+nav .ativo a{
+    background-color: #39AAE1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banner{
+    background-image:url('../images/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* A propriedade "cover" ajusta o fundo sempre para preencher todo o espaço do elemento. No caso, ele vai preencher toda a div. Como eu não determinei a altura da div, ela terá a altura do background, ou seja, nesse caso, a altura da imagem*/
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column{
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.banner_headline h1{
+    text-shadow: 0px 1px 0px #555555;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+}
+.banner_headline h2{
+    text-shadow: 0px 1px 0px #555555;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+.banner_options{
     background-color: red;
+    height: 210px;
+    display: flex;
+    color: white;
+}
+.banner1, .banner2, .banner3{
+    flex: 1;
+    padding: 25px;
+    padding-top: 20px;
+}
+.banner1{
+    background-color: #39AAE1;
+}
+.banner2{
+    background-color: #0079C7;
+}
+.banner3{
+    background-color: rgb(29, 57, 182);
+}
+.banner-titulo{
+    font-size: 21px;
+}
+.banner-descricao{
+    font-size: 12;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-descricao-horarios{
+    margin-top: 10px;
+}
+.descricao-horarios{
+    font-size: 13px;
+    border-bottom: 1px solid rgb(56, 88, 163);
+    padding-top: 12px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-descricao-horarios .dia{
+
+}
+.banner-descricao-horarios .hora{
+
+}
+.banner_options a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widget-titulo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-titulo-texto{
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget-titulo-barra{
+    width: 50px;
+    height: 3px;
+    background-color: #36A9E1;
+    margin-top: 10px;
+}
+.widget-corpo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.quadrados{
+    background-color: #39AAE1;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.widget-corpo-texto{
+    margin-bottom: 30px;
+}
+.widget-corpo-container{
+    max-width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.widget-corpo-barra{
+    width: 100%;
+    height: 2px;
+    background-color: #ebe8e8;
+}
+.widget-corpo-contatos{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.marcador-de-texto{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 7px solid #afaeae;
+    margin-right: 10px;
+}
+.widget-corpo-contatos-texto{
+    line-height: 15px;
+    margin: auto;
+}
+article{
+    min-width: 300px;
+    flex: 1;
+    margin-right: 20px;
+}
+article .noticias-data{
+    display: flex;
+}
+article .data-postagem{
+    background-color: #2B4C99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .quantidade-comentarios{
+    background-color: #39AAE1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+article .noticia-imagem{
+    margin-top: 30px;
+}
+article .noticia-imagem img{
+    width: 100%;
+    height: auto;
+}
+article .noticia-titulo{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    color: black;
+}
+article .noticia-resumo{
+    color: #5C5C5C;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+article a{
+    text-decoration: none;
+}
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.rodape-menu{
+    display: flex;
+}
+.rm-1, .rm-2, .rm-3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.rm-1{
+    background-color: #39AAE1;
+}
+.rm-2{
+    background-color: #0079C7;
+}
+.rm-3{
+    background-color: rgb(29, 57, 182);
+}
+.rodape-area{
+    display: flex;
+    color: white;
+}
+.rodape-area-item{
+    flex: 1;
+    color: white;
+}
+.flex-column{
+    flex-direction: column;
+}
+footer .widget-titulo-texto{
+    
+}
+.rodape-copia{
+    border-top: 1px solid #2C2C2C;
+    height: 40px;
+    line-height: 40px;
+    color: #5C5C5C;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.widget-corpo .endereco-contatos{
+    display: flex;
+    justify-content: space-between;
+}
+.widget-corpo .endereco-contatos .endereco{
+    max-width: 150px;
+}
+.widget-corpo .endereco-contatos .contatos{
+    max-width: 150px;
 }
