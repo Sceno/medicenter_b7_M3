@@ -17,6 +17,14 @@ header{
     display: flex;
     align-items: center;
 }
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
 .container{
     display: flex;
     justify-content: space-between;
@@ -266,15 +274,54 @@ footer{
 }
 .rodape-area-item{
     flex: 1;
-    color: white;
+    color: #909090;
+    max-width: 300px;
+    padding-right: 30px;
 }
 .flex-column{
     flex-direction: column;
 }
-footer .widget-titulo-texto{
-    
+.rodape-area-item .widget-titulo-texto{
+    color: white;    
 }
-.rodape-copia{
+.widget-corpo .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19.5px;
+}
+.widget-corpo .endereco-contatos{
+    display: flex;
+    font-size: 12px;
+    width: 330px;
+    justify-content: space-between;
+}
+.widget-corpo .endereco-contatos .endereco{
+    display: flex;
+    flex-direction: column;
+}
+.widget-corpo .endereco-contatos .contatos{
+    display: flex;
+    flex-direction: column;
+}
+.widget-corpo .endereco-contatos .email{
+    color: white;
+}
+.widget-corpo .descricao ul{
+    margin: 0px;
+    padding-left: 15px;
+    color: white;
+}
+.widget-corpo .descricao ul li{
+    margin-bottom: 20px;
+}
+.widget-corpo .descricao ul li div{
+    color: #42B3E5;
+    font-size: 11px;
+    font-weight: 600;
+}
+.rodape-copyright{
     border-top: 1px solid #2C2C2C;
     height: 40px;
     line-height: 40px;
@@ -282,13 +329,66 @@ footer .widget-titulo-texto{
     font-size: 12px;
     margin-top: 30px;
 }
-.widget-corpo .endereco-contatos{
-    display: flex;
-    justify-content: space-between;
-}
-.widget-corpo .endereco-contatos .endereco{
-    max-width: 150px;
-}
-.widget-corpo .endereco-contatos .contatos{
-    max-width: 150px;
+
+
+@media (max-width:600px) {
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside{
+        padding: 20px;
+    }
+    .rodape-menu{
+        flex-direction: column;
+    }
+    .rodapé-area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .rodape-copyright{
+        padding-left: 20px;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 15px;
+    }
+    .menuMobile-linha{
+        height: 4px;
+        width: 30px;
+        background-color: #39AAE1;
+        margin-bottom: 7px;
+    }
 }
